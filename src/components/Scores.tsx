@@ -8,8 +8,8 @@ type ScoresProps = {
 function Scores(props: ScoresProps) {
   return (
     <div className='scores'>
-        <h1 className='current-score'>{props.currentScore}</h1>
-        <h1 className='high-score'>{props.highScore}</h1>s
+        <h1 className='current-score'>Current score: {props.currentScore}</h1>
+        <h1 className='high-score'>High score: {props.highScore}</h1>
     </div>
   
   );
