@@ -1,0 +1,9 @@
+* {
+    background-color: grey;
+}
+
+.scores {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
