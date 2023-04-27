@@ -4,14 +4,18 @@ type CardProps = {
     title: string;
     img: string;
     clicked: boolean;
-
+   updateScore: () => void;
 }
 function Card(props: CardProps) {
     const [clicked, setClicked] = useState(false);
 
     const handleClick = () => {
-        setClicked(true);
-        console.log('clicked', props.title)
+        if (clicked === false){
+            setClicked(true);
+            console.log('clicked', props.title)
+            props.updateScore();
+        }
+      
     }
     return (
         <div className='card' onClick={handleClick}>
