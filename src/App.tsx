@@ -8,7 +8,7 @@ function App() {
         return (
             <Card 
             title={card.title} 
-            img={card.img} 
+            img={card.coverImg} 
             clicked={card.clicked} />
         )
     })
