@@ -12,6 +12,15 @@ function App() {
     const updateScore = () => {
         setScore(score + 1);
     }
+    const gameOver = () => {
+        if (score > highScore) {
+            setHighScore(score);
+        }
+        setScore(0);
+        cardData.forEach((card) => {
+            card.clicked = false;
+          });
+    }
 
     const cards = cardData.map (card => {
  
@@ -22,6 +31,7 @@ function App() {
             img={card.coverImg} 
             clicked={card.clicked}
             updateScore={updateScore}
+            gameOver={gameOver}
             />
         
         )
@@ -29,7 +39,7 @@ function App() {
     return (
 
         <div>
-             <Scores currentScore={score} highScore={0}/>
+             <Scores currentScore={score} highScore={highScore}/>
              <div className="card-board">
                 {cards}
              </div>
