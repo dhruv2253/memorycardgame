@@ -13,49 +13,49 @@ export const cardData = [
     },
     {
         id: 3,
-        title: "Card 3",
+        title: "Armin Arlert",
         coverImg: "armin.jpg",
         clicked: false
     },
     {
         id: 4,
-        title: "Card 4",
+        title: "Beast Titan",
         coverImg: "beast.jpg",
         clicked: false
     },
     {
         id: 5,
-        title: "Card 5",
+        title: "Colossal Titan",
         coverImg: "colossal.jpg",
         clicked: false
     },
     {
         id: 6,
-        title: "Card 6",
+        title: "Erwin Smith",
         coverImg: "erwin.jpg",
         clicked: false
     },
     {
         id: 7,
-        title: "Card 7",
+        title: "Hange Zoe",
         coverImg: "hange.jpg",
         clicked: false
     },
     {
         id: 8,
-        title: "Card 8",
+        title: "Levi Ackerman",
         coverImg: "levi.jpg",
         clicked: false
     },
     {
         id: 9,
-        title: "Card 9",
+        title: "Mika Ackerman",
         coverImg: "mikasa.jpg",
         clicked: false
     },
     {
         id: 10,
-        title: "Card 10",
+        title: "Warhammer Titan",
         coverImg: "warhammer.jpg",
         clicked: false
     }

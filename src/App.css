@@ -1,12 +1,13 @@
 * {
     background-color: grey;
     margin: 3px;
+    overflow: hidden;
 }
 
 .scores {
     display: flex;
-    flex-direction: column;
-    justify-content: start;
+    
+    justify-content: space-between;
     font-size: 16px;
     
 }
@@ -20,7 +21,9 @@
 }
 
 .card-image {
-    width: 100%;
+    width: 200px;
+    height: 300px;
+    border-radius: 9px;
 }
 
 .card {
@@ -28,11 +31,18 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 200px;
-    height: 300px;
+    transition: all .2s ease-in-out; 
     margin: 10px;
     border: 1px solid black;
     border-radius: 9px;
     background-color: white;
 }
 
+.card:hover {
+    border-color: aqua;
+    transform: scale(1.1); 
+}
+
+.name {
+    background-color: white;
+}
