@@ -1,35 +1,21 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
-type CardProps = {
+export type CardProps = {
     title: string;
     img: string;
     clicked: boolean;
-   updateScore: () => void;
-   gameOver: () => void;
+    handleClick: (title: string) => void;
 }
-function Card(props: CardProps) {
-    const [clicked, setClicked] = useState(false);
+function Card({title, img, clicked, handleClick}: CardProps) {
 
-    const handleClick = () => {
-        if (clicked === false){
-            setClicked(true);
-            console.log('clicked', props.title)
-            props.updateScore();
-        } else {
-            props.gameOver();
-            setClicked(false);
-           
-        }
-        
-      
-    }
     return (
-        <div className={`card ${clicked ? 'clicked' : ''}`} onClick={handleClick}>
-            <img className='card-image' src={`/images/${props.img}`} alt={props.img} />
-            <span className="name">{props.title}</span>
+        <div className={`card ${clicked ? 'clicked' : ''}`} onClick={() => handleClick(title)}>
+            <img className='card-image' src={`/images/${img}`} alt={img} />
+            <span className="name">{title}</span>
         </div>
     );
 }
+
 
 export default Card;
 
