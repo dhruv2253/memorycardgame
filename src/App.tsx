@@ -32,20 +32,22 @@ function App() {
 
     const updateScore = () => {
         setScore(score + 1);
-        
-           
+      
     }
     const gameOver = () => {
         
         if (score > highScore) {
             setHighScore(score);
-        }
+        } 
         setScore(0);
        
     }
 
     /** Reset the cards when the score is 0 */
     useEffect(() => {
+        if (score === 10) {
+            console.log('You win!');
+        }
         // If the score is 0, reset the cards
         if (score === 0) {
             // Create a new array of cards with all the cards set to not clicked
