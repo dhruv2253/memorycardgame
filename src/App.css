@@ -2,6 +2,7 @@
     background-color: grey;
     margin: 3px;
     overflow: hidden;
+   
 }
 
 .scores {
@@ -18,11 +19,13 @@
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
+    padding-top: 7px;
+    padding-bottom: 7px;
 }
 
 .card-image {
     width: 200px;
-    height: 300px;
+    height: 275px;
     border-radius: 9px;
 }
 
