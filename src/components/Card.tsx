@@ -25,7 +25,7 @@ function Card(props: CardProps) {
     }
     return (
         <div className={`card ${props.clicked ? 'clicked' : ''}`} onClick={handleClick}>
-            <img className='card-image' src={`../images/${props.img}`} alt={props.img} />
+            <img className='card-image' src={`/images/${props.img}`} alt={props.img} />
             <span className="name">{props.title}</span>
         </div>
     );
