@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/github.io/memorycardgame/static/css/main.e3a2ab28.css",
-    "main.js": "/github.io/memorycardgame/static/js/main.39ad4fa4.js",
-    "index.html": "/github.io/memorycardgame/index.html",
-    "main.e3a2ab28.css.map": "/github.io/memorycardgame/static/css/main.e3a2ab28.css.map",
-    "main.39ad4fa4.js.map": "/github.io/memorycardgame/static/js/main.39ad4fa4.js.map"
+    "main.css": "/memorycardgame/static/css/main.e3a2ab28.css",
+    "main.js": "/memorycardgame/static/js/main.39ad4fa4.js",
+    "index.html": "/memorycardgame/index.html",
+    "main.e3a2ab28.css.map": "/memorycardgame/static/css/main.e3a2ab28.css.map",
+    "main.39ad4fa4.js.map": "/memorycardgame/static/js/main.39ad4fa4.js.map"
   },
   "entrypoints": [
     "static/css/main.e3a2ab28.css",
