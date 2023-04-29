@@ -23,6 +23,7 @@ function App() {
             card.clicked = true;
             console.log('clicked', title)
             updateScore();
+            shuffle(cards); 
         } else {
             // If the card is clicked, reset the score and the cards
             gameOver();
@@ -63,11 +64,33 @@ function App() {
         }
     }, [score]);
 
+    // Shuffle the cards
+    const shuffle = (array: any[]) => {
+        // Fisher-Yates shuffle algorithm
+        let currentIndex = array.length,  randomIndex;
+      
+        // While there remain elements to shuffle.
+        while (currentIndex != 0) {
+      
+          // Pick a remaining element.
+          // Random number between 0 and currentIndex (exclusive)
+          randomIndex = Math.floor(Math.random() * currentIndex);
+          currentIndex--;
+      
+          // And swap it with the current element.
+          [array[currentIndex], array[randomIndex]] = [
+            array[randomIndex], array[currentIndex]];
+        }
+      
+        return array;
+      }
+      
+    
     
     const cardComponents = cards.map(card => {
 
         return (
-            <Card 
+            <Card
             title={card.title} 
             img={card.coverImg} 
             clicked={card.clicked}
