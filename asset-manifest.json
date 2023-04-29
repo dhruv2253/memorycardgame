@@ -1,13 +1,23 @@
 {
   "files": {
     "main.css": "/memorycardgame/static/css/main.e3a2ab28.css",
-    "main.js": "/memorycardgame/static/js/main.39ad4fa4.js",
+    "main.js": "/memorycardgame/static/js/main.365badfa.js",
+    "static/media/mikasa.jpg": "/memorycardgame/static/media/mikasa.189d0f7fb37eb2524f88.jpg",
+    "static/media/hange.jpg": "/memorycardgame/static/media/hange.30a8ca798b04f0b63936.jpg",
+    "static/media/erwin.jpg": "/memorycardgame/static/media/erwin.c9c3e66fd83dd89c2c2c.jpg",
+    "static/media/levi.jpg": "/memorycardgame/static/media/levi.6a8bf755465301536b06.jpg",
+    "static/media/warhammer.jpg": "/memorycardgame/static/media/warhammer.5356701ca45c3ff575ce.jpg",
+    "static/media/armored.jpg": "/memorycardgame/static/media/armored.22bfadb11fe2a2ad43b1.jpg",
+    "static/media/armin.jpg": "/memorycardgame/static/media/armin.f3412b3bde6b319d7504.jpg",
+    "static/media/colossal.jpg": "/memorycardgame/static/media/colossal.95908882eaa33f77ed31.jpg",
+    "static/media/beast.jpg": "/memorycardgame/static/media/beast.2df7e2430a28f2492fbd.jpg",
+    "static/media/attack.jpg": "/memorycardgame/static/media/attack.5d508b132b439bf61301.jpg",
     "index.html": "/memorycardgame/index.html",
     "main.e3a2ab28.css.map": "/memorycardgame/static/css/main.e3a2ab28.css.map",
-    "main.39ad4fa4.js.map": "/memorycardgame/static/js/main.39ad4fa4.js.map"
+    "main.365badfa.js.map": "/memorycardgame/static/js/main.365badfa.js.map"
   },
   "entrypoints": [
     "static/css/main.e3a2ab28.css",
-    "static/js/main.39ad4fa4.js"
+    "static/js/main.365badfa.js"
   ]
 }
