@@ -73,13 +73,16 @@ function App() {
         return array;
     }
 
+    // Update the score method
     const updateScore = () => {
+        // Set the score to the current score + 1
         setScore(score + 1);
       
     }
-    
+
+    // Game over method
     const gameOver = () => {
-        
+        // If the current score is greater than the high score, set the high score to the current score
         if (score > highScore) {
             setHighScore(score);
         } 
@@ -87,8 +90,10 @@ function App() {
        
     }
     
+    // Map the cards to card components
     const cardComponents = cards.map(card => {
-
+        
+        // Return a card component for each card
         return (
             <Card
             title={card.title} 
