@@ -1,5 +1,5 @@
 {
-  "homepage": "http://dhruv2253/github.io/memorycardgame",
+  "homepage": "http://dhruv2253.github.io/memorycardgame",
   "name": "memorycardgame",
   "version": "0.1.0",
   "private": true,
@@ -44,6 +44,6 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^5.0.0"
+    "gh-pages": "^4.0.0"
   }
 }
