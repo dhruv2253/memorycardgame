@@ -49,7 +49,7 @@ export const cardData = [
     },
     {
         id: 9,
-        title: "Mika Ackerman",
+        title: "Mikasa Ackerman",
         coverImg: "mikasa.jpg",
         clicked: false
     },
