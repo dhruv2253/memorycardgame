@@ -5,9 +5,9 @@ import {cardData} from "./CardData";
 import { useEffect, useState } from "react";
 
 function App() {
+
     const [score, setScore] = useState(0);
     const [highScore, setHighScore] = useState(0);
-    /** Store cards in state */
     const [cards, setCards] = useState(cardData);
     
     /** Handles the click event for the card with the given title */
@@ -31,19 +31,7 @@ function App() {
         }
     }
 
-    const updateScore = () => {
-        setScore(score + 1);
-      
-    }
-    const gameOver = () => {
-        
-        if (score > highScore) {
-            setHighScore(score);
-        } 
-        setScore(0);
-       
-    }
-
+   
     /** Reset the cards when the score is 0 */
     useEffect(() => {
         if (score === 10) {
@@ -70,7 +58,7 @@ function App() {
         let currentIndex = array.length,  randomIndex;
       
         // While there remain elements to shuffle.
-        while (currentIndex != 0) {
+        while (currentIndex !== 0) {
       
           // Pick a remaining element.
           // Random number between 0 and currentIndex (exclusive)
@@ -83,9 +71,21 @@ function App() {
         }
       
         return array;
-      }
+    }
+
+    const updateScore = () => {
+        setScore(score + 1);
       
+    }
     
+    const gameOver = () => {
+        
+        if (score > highScore) {
+            setHighScore(score);
+        } 
+        setScore(0);
+       
+    }
     
     const cardComponents = cards.map(card => {
 
