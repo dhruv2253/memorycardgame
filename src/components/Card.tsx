@@ -10,7 +10,7 @@ function Card({title, img, clicked, handleClick}: CardProps) {
 
     return (
         <div className={`card ${clicked ? 'clicked' : ''}`} onClick={() => handleClick(title)}>
-            <img className='card-image' src={`/images/${img}`} alt={img} />
+            <img className='card-image' src={require(`../../public/images/${img}`)} alt={img} />
             <span className="name">{title}</span>
         </div>
     );
