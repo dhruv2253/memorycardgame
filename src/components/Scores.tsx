@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { ScoreboardProps } from '../types';
 
 function Scores(props: ScoreboardProps) {

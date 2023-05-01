@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+
 import { CardProps} from '../types';
 
 function Card({title, img, clicked, handleClick}: CardProps) {
