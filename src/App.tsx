@@ -96,12 +96,12 @@ function App() {
         // Return a card component for each card
         return (
             <Card
+            key={card.id}
             title={card.title} 
             img={card.coverImg} 
             clicked={card.clicked}
             handleClick={handleClick}
             />
-        
         )
     })
     return (
