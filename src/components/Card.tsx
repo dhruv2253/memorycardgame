@@ -1,11 +1,6 @@
 import { useEffect, useState } from "react";
+import { CardProps} from '../types';
 
-export type CardProps = {
-    title: string;
-    img: string;
-    clicked: boolean;
-    handleClick: (title: string) => void;
-}
 function Card({title, img, clicked, handleClick}: CardProps) {
 
     return (

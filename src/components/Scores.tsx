@@ -1,11 +1,7 @@
 import React from 'react';
+import { ScoreboardProps } from '../types';
 
-type ScoresProps = {
-  currentScore: number;
-  highScore: number;
-}
-
-function Scores(props: ScoresProps) {
+function Scores(props: ScoreboardProps) {
   return (
     <div className='scores'>
         <h1 className='current-score'>Current score: {props.currentScore}</h1>
