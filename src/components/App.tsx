@@ -1,7 +1,7 @@
-import Scores from "./components/Scores";
-import "./App.css"
-import Card from "./components/Card";
-import {cardData} from "./CardData";
+import Scores from "./Scores";
+import "../styles/App.css"
+import Card from "./Card";
+import {cardData} from "../CardData";
 import { useEffect, useState } from "react";
 
 function App() {
