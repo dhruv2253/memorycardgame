@@ -31,7 +31,7 @@ function App() {
         }
     }
 
-   
+    
     /** Reset the cards when the score is 0 */
     useEffect(() => {
         if (score === 10) {
@@ -76,7 +76,9 @@ function App() {
     // Update the score method
     const updateScore = () => {
         // Set the score to the current score + 1
-        setScore(score + 1);
+        setScore((score) => {
+            return score + 1;
+        });
       
     }
 
