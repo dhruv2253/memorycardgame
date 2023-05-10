@@ -76,8 +76,8 @@ function App() {
     // Update the score method
     const updateScore = () => {
         // Set the score to the current score + 1
-        setScore((score) => {
-            return score + 1;
+        setScore(prevScore => {
+            return prevScore + 1;
         });
       
     }
